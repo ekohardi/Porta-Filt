@@ -160,10 +160,10 @@ export default function App() {
       {/* Quiet Footer */}
       <footer className="bg-white border-t border-slate-200 mt-12">
         <div className="mx-auto max-w-[1380px] px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-slate-500">
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <span className="font-semibold text-slate-900">PORTA-FILT</span>
             <span aria-hidden="true">·</span>
-            <span>Portable Multi-Stage Filtration Tool Documentation</span>
+            <span>Project Innovation of Tsurayya Rahadatul'aisy Rofifah</span>
           </div>
           <div className="flex flex-wrap items-center gap-5">
             {NAV_TABS.map((tab) => (

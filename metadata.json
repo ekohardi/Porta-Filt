@@ -2,5 +2,7 @@
   "name": "PORTA-FILT — Portable Multi-Stage Water Filtration Tool",
   "description": "Interactive technical showcase and clickable exploded-view explorer for PORTA-FILT, detailing every modular PVC column, fitting, mesh retainer, filter medium, and demonstration video.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

@@ -19,13 +19,15 @@ export interface PortaFiltComponent {
   imageFocusClass?: string;
 }
 
+const BASE = import.meta.env.BASE_URL;
+
 export const PORTAFILT_IMAGES = {
-  assembledComparison: '/assets/aistudio/IMG-20261109-WA0003_a364a78f.jpg',
-  partsFlatlay: '/assets/aistudio/IMG-20261108-WA0090_34fe043a.jpg',
-  column15Gravel: '/assets/aistudio/IMG-20261109-WA0002_2e7d5c44.jpg',
-  processCollage: '/assets/aistudio/IMG-20261108-WA0224_73f3c77f.jpg',
-  column10AndCap: '/assets/aistudio/IMG-20261109-WA0001_a043df42.jpg',
-  column50AndCarbon: '/assets/aistudio/IMG-20261109-WA0004_1a8b5525.jpg',
+  assembledComparison: `${BASE}assets/aistudio/IMG-20261109-WA0003_a364a78f.jpg`,
+  partsFlatlay: `${BASE}assets/aistudio/IMG-20261108-WA0090_34fe043a.jpg`,
+  column15Gravel: `${BASE}assets/aistudio/IMG-20261109-WA0002_2e7d5c44.jpg`,
+  processCollage: `${BASE}assets/aistudio/IMG-20261108-WA0224_73f3c77f.jpg`,
+  column10AndCap: `${BASE}assets/aistudio/IMG-20261109-WA0001_a043df42.jpg`,
+  column50AndCarbon: `${BASE}assets/aistudio/IMG-20261109-WA0004_1a8b5525.jpg`,
 };
 
 export const PORTAFILT_COMPONENTS: PortaFiltComponent[] = [
