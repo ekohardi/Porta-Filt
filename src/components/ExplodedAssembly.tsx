@@ -747,7 +747,7 @@ export function ExplodedAssembly({
                 )}
               </motion.g>
 
-              {/* 08a. EXTERNAL SOCKET COUPLING (SAMBUNGAN SHOCK LUAR) */}
+              {/* 09. EXTERNAL SOCKET COUPLING (SAMBUNGAN SHOCK LUAR) */}
               <motion.g
                 animate={{ y: shockUpperY }}
                 transition={{ type: 'spring', stiffness: 220, damping: 24 }}
@@ -797,8 +797,8 @@ export function ExplodedAssembly({
                 opacity={partOpacity('kasa-ayam')}
               >
                 <ellipse
-                  cx="340"
-                  cy="346"
+                  cx="310"
+                  cy="518"
                   rx="24"
                   ry="8"
                   fill="url(#wireMeshPattern)"
