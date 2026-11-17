@@ -747,7 +747,79 @@ export function ExplodedAssembly({
                 )}
               </motion.g>
 
-              {/* 09. LOWER 10 cm COLUMN + PERFORATED END CAP */}
+              {/* 08a. EXTERNAL SOCKET COUPLING (SAMBUNGAN SHOCK LUAR) */}
+              <motion.g
+                animate={{ y: shockUpperY }}
+                transition={{ type: 'spring', stiffness: 220, damping: 24 }}
+                onClick={() => handleDiagramPartClick('shock-luar')}
+                className="cursor-pointer"
+                opacity={partOpacity('shock-luar')}
+              >
+                <rect
+                  x="310"
+                  y="311"
+                  width="60"
+                  height="30"
+                  rx="3"
+                  fill="url(#pvcFitting)"
+                  stroke={partStroke('shock-luar')}
+                  strokeWidth={partStrokeWidth('shock-luar')}
+                />
+                <line
+                  x1="312"
+                  y1="326"
+                  x2="368"
+                  y2="326"
+                  stroke="#334155"
+                  strokeWidth="1"
+                  strokeDasharray="3 2"
+                />
+                {isExploded && (
+                  <g>
+                    <line x1="372" y1="326" x2="404" y2="326" stroke="#0284C7" strokeWidth="1" />
+                    <text
+                      x="410"
+                      y="330"
+                      className="fill-slate-800 text-[11px] font-mono font-semibold"
+                    >
+                      09 · Shock Luar
+                    </text>
+                  </g>
+                )}
+              </motion.g>
+
+              {/* 10. WIRE MESH RETAINER SCREEN (KASA AYAM) */}
+              <motion.g
+                animate={{ y: meshY }}
+                transition={{ type: 'spring', stiffness: 220, damping: 24 }}
+                onClick={() => handleDiagramPartClick('kasa-ayam')}
+                className="cursor-pointer"
+                opacity={partOpacity('kasa-ayam')}
+              >
+                <ellipse
+                  cx="340"
+                  cy="346"
+                  rx="24"
+                  ry="8"
+                  fill="url(#wireMeshPattern)"
+                  stroke={partStroke('kasa-ayam')}
+                  strokeWidth={partStrokeWidth('kasa-ayam')}
+                />
+                {isExploded && (
+                  <g>
+                    <line x1="366" y1="346" x2="404" y2="346" stroke="#0284C7" strokeWidth="1" />
+                    <text
+                      x="410"
+                      y="350"
+                      className="fill-slate-800 text-[11px] font-mono font-semibold"
+                    >
+                      10 · Kasa Ayam Mesh
+                    </text>
+                  </g>
+                )}
+              </motion.g>
+
+              {/* 11. LOWER 10 cm COLUMN + PERFORATED END CAP */}
               <motion.g
                 animate={{ y: col10CapY }}
                 transition={{ type: 'spring', stiffness: 220, damping: 24 }}
@@ -822,7 +894,7 @@ export function ExplodedAssembly({
                       y="569"
                       className="fill-slate-800 text-[11px] font-mono font-semibold"
                     >
-                      09 · 10 cm + End Cap
+                      11 · 10 cm + End Cap
                     </text>
                   </g>
                 )}
